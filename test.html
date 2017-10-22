@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        ul,
+        ol {
+            list-style: none;
+        }
+        
+        body {
+            padding: 50px;
+        }
+        clearFix:befor,
+        clearFix:after{
+        	content: '';
+        	height: 0;
+        	clear: both;
+        	display: block;
+        }
+        .dataPicker {
+            width: 200px;
+            height: 30px;
+            position: relative;
+            border: 1px solid #999999;
+        }
+        
+        .dataPicker>p{
+            width: 180px;
+            height: 100%;
+            text-indent: 8px;
+        }
+        
+        .dataPicker>div{
+            position: absolute;
+            top: 30px;
+            left: -1px;
+            border: 1px solid #999;
+            width: 240px;
+            height: 162px;
+        	padding: 10px;
+        	line-height: 2em;
+        	background-color: #fff;
+        	display: none;
+        }
+        .dataPicker>div>p{
+        	text-align: center;
+        	cursor: pointer;
+        }
+        .dataPicker>div>p>span{
+        	display: inline-block;
+        	padding: 0 4px;
+        }
+        .dataPicker>div>div>a{
+        	float: left;
+        	width: 60px;
+    		text-align: center;
+    		line-height: 2.8;
+    		cursor: pointer;
+        }
+        .dataPicker>div>div>span{
+        	float: left;
+        	display: block;
+        	width: 34px;
+        	font-size: 13px;
+        	text-align: center;
+        	line-height: 2em;
+    		cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="dataPicker">
+        
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/plugin-datePicker.js"></script>
+<script>
+	
+    console.log($('.dataPicker').datePicker())
+</script>
+
+</html>
